@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h2 {
+    background-color: #3371b9;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px #00000026;
+    border-radius: 5px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #5c6165;
+    color: #fff;
+    border-radius: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+.team-name-cell {
+    width: 50%;
+}
+
+.short-cell {
+    width: 5%;
+}
+
+#searchBox,
+select {
+    width: 15%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-bottom: 12px;
+    border-radius: 5px;
+
+}
+
+.team-logo {
+    vertical-align: middle;
+
+    margin-right: 5px;
+    border-radius: 20%;
+    border: 1px solid #ddd;
+}
