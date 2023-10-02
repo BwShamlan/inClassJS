@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Mouse and Keyboard Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <img src="https://assets.the-afc.com/AFC%20Competition%20Logos/For_All_Tournament_element/AFC-Tournament-Logos_AFC-Champions-League-.png"
+        alt="AFC Logo" width="525" height="300">
+    <h2>AFC Champions League Standing</h2>
+
+    <input type="text" id="searchBox" onkeyup="filterByTeam()" placeholder="Search for team" title="Type in a team.">
+
+
+    <table id="grpD" class="afcSchedule">
+        <tbody>
+            <tr>
+                <th class="team-name-cell">Group D</th>
+                <th class="short-cell">PL</th>
+                <th class="short-cell">W</th>
+                <th class="short-cell">D</th>
+                <th class="short-cell">L</th>
+                <th class="short-cell">+/-</th>
+                <th class="short-cell">GD</th>
+                <th class="short-cell">Pts</th>
+            </tr>
+
+            <tr id="team-row-1">
+                <td>
+                    <img class="team-logo"
+                        src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3d/Nassaji_2018_logo.svg/1200px-Nassaji_2018_logo.svg.png"
+                        alt="Nassaji Logo" width="25" height="25">
+                    Nassaji
+                </td>
+                <td class="short-cell">1</td>
+                <td class="short-cell">1</td>
+                <td class="short-cell">0</td>
+                <td class="short-cell">0</td>
+                <td class="short-cell">2-0</td>
+                <td class="short-cell">+2</td>
+                <td class="short-cell">3</td>
+            </tr>
+
+            <tr id="team-row-2">
+                <td>
+                    <img class="team-logo" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Al-Hilal-Logo.png"
+                        alt="Al-Hilal Logo" width="25" height="25">
+                    Al Hilal
+                </td>
+                <td class="short-cell">1</td>
+                <td class="short-cell">0</td>
+                <td class="short-cell">1</td>
+                <td class="short-cell">0</td>
+                <td class="short-cell">1-1</td>
+                <td class="short-cell">0</td>
+                <td class="short-cell">1</td>
+            </tr>
+
+            <tr id="team-row-3">
+                <td>
+                    <img class="team-logo"
+                        src="https://upload.wikimedia.org/wikipedia/en/a/ae/PFC_Navbahor_Namangan_logo.png"
+                        alt="Navbahor Logo" width="25" height="25">
+                    Navbahor
+                </td>
+                <td class="short-cell">1</td>
+                <td class="short-cell">0</td>
+                <td class="short-cell">1</td>
+                <td class="short-cell">0</td>
+                <td class="short-cell">1-1</td>
+                <td class="short-cell">0</td>
+                <td class="short-cell">1</td>
+            </tr>
+
+            <tr id="team-row-4">
+                <td>
+                    <img class="team-logo"
+                        src="https://upload.wikimedia.org/wikipedia/en/thumb/6/68/Mumbai_City_FC_logo.svg/1200px-Mumbai_City_FC_logo.svg.png"
+                        alt="Mumbai City Logo" width="25" height="25">
+                    Mumbai City
+                </td>
+                <td class="short-cell">1</td>
+                <td class="short-cell">0</td>
+                <td class="short-cell">0</td>
+                <td class="short-cell">1</td>
+                <td class="short-cell">0-2</td>
+                <td class="short-cell">-2</td>
+                <td class="short-cell">0</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+    <table id="grpE" class="afcSchedule">
+        <tbody>
+            <tr>
+                <th class="team-name-cell">Group E</th>
+                <th class="short-cell">PL</th>
+                <th class="short-cell">W</th>
+                <th class="short-cell">D</th>
+                <th class="short-cell">L</th>
+                <th class="short-cell">+/-</th>
+                <th class="short-cell">GD</th>
+                <th class="short-cell">Pts</th>
+            </tr>
+
+            <tr id="team-row-1">
+                <td>
+                    <img class="team-logo" src="https://i.ibb.co/DWvc2Mp/nassar.png" alt="Al nassar Logo" width="25"
+                        height="25">
+                    Al Nassar
+                </td>
+                <td class="short-cell">1</td>
+                <td class="short-cell">1</td>
+                <td class="short-cell">0</td>
+                <td class="short-cell">0</td>
+                <td class="short-cell">2-0</td>
+                <td class="short-cell">+2</td>
+                <td class="short-cell">3</td>
+            </tr>
+
+            <tr id="team-row-2">
+                <td>
+                    <img class="team-logo"
+                        src="https://upload.wikimedia.org/wikipedia/en/thumb/2/28/FC_Istiklol_logo.svg/1200px-FC_Istiklol_logo.svg.png"
+                        alt="Istiklol Logo" width="25" height="25">
+                    Istiklol
+                </td>
+                <td class="short-cell">1</td>
+                <td class="short-cell">0</td>
+                <td class="short-cell">1</td>
+                <td class="short-cell">0</td>
+                <td class="short-cell">0-0</td>
+                <td class="short-cell">0</td>
+                <td class="short-cell">1</td>
+            </tr>
+
+
+
+            <tr id="team-row-3">
+                <td>
+                    <img class="team-logo" src="https://assets.b365api.com/images/team/b/383774.png"
+                        alt="Al-Duhail Logo" width="25" height="25">
+                    Al-Duhail
+                </td>
+                <td class="short-cell">1</td>
+                <td class="short-cell">0</td>
+                <td class="short-cell">1</td>
+                <td class="short-cell">0</td>
+                <td class="short-cell">0-0</td>
+                <td class="short-cell">0</td>
+                <td class="short-cell">1</td>
+            </tr>
+
+            <tr id="team-row-4">
+                <td>
+                    <img class="team-logo" src="https://fc-perspolis.com/wp-content/uploads/2022/05/perspolislogo.png"
+                        alt="Persepolis Logo" width="25" height="25">
+                    Persepolis
+                </td>
+                <td class="short-cell">1</td>
+                <td class="short-cell">0</td>
+                <td class="short-cell">0</td>
+                <td class="short-cell">1</td>
+                <td class="short-cell">0-2</td>
+                <td class="short-cell">-2</td>
+                <td class="short-cell">0</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+    <h2>Matches</h2>
+
+    <select class="select_groups" onchange="filterByGroup()">
+        <option selected="" value="">All Groups Matches</option>
+        <option value="D">Group D Matches</option>
+        <option value="E">Group E Matches</option>
+    </select>
+
+    <table id="GrpEmatches">
+        <tr>
+            <th colspan="3">Group E - Round 2 (Today)</th>
+        </tr>
+
+        <tr>
+            <td class="team-name-cell">
+                Al Nassar
+                <img class="team-logo" src="https://i.ibb.co/DWvc2Mp/nassar.png" alt="Al nassar Logo" width="25"
+                    height="25">
+            </td>
+            <td class="short-cell">9:00 PM</td>
+            <td class="team-name-cell">
+                <img class="team-logo"
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/2/28/FC_Istiklol_logo.svg/1200px-FC_Istiklol_logo.svg.png"
+                    alt="Istiklol Logo" width="25" height="25">
+                Istiklol
+            </td>
+        </tr>
+
+        <tr>
+            <td class="team-name-cell">Al-Duhail
+                <img class="team-logo" src="https://assets.b365api.com/images/team/b/383774.png" alt="Al-Duhail Logo"
+                    width="25" height="25">
+            </td>
+            <td class="short-cell">9:00 PM</td>
+            <td class="team-name-cell">
+                <img class="team-logo" src="https://fc-perspolis.com/wp-content/uploads/2022/05/perspolislogo.png"
+                    alt="Persepolis Logo" width="25" height="25">
+                Persepolis
+            </td>
+        </tr>
+    </table>
+
+
+    <table id="GrpDmatches">
+        <tr>
+            <th colspan="3"> Group D - Round 2 (Tommorow)</th>
+        </tr>
+
+        <tr>
+            <td>
+                Navbahor
+                <img class="team-logo"
+                    src="https://upload.wikimedia.org/wikipedia/en/a/ae/PFC_Navbahor_Namangan_logo.png"
+                    alt="Navbahor Logo" width="25" height="25">
+
+            </td>
+            <td class="short-cell">5:00 PM</td>
+            <td>
+                <img class="team-logo"
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/6/68/Mumbai_City_FC_logo.svg/1200px-Mumbai_City_FC_logo.svg.png"
+                    alt="Mumbai City Logo" width="25" height="25">
+                Mumbai City
+            </td>
+        </tr>
+
+        <tr>
+            <td class="team-name-cell">
+                Nassaji
+                <img class="team-logo"
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3d/Nassaji_2018_logo.svg/1200px-Nassaji_2018_logo.svg.png"
+                    alt="Nassaji Logo" width="25" height="25">
+
+            </td>
+            <td class="short-cell">7:00 PM</td>
+            <td class="team-name-cell">
+                <img class="team-logo" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Al-Hilal-Logo.png"
+                    alt="Al-Hilal Logo" width="25" height="25">
+                Al Hilal
+            </td>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
