@@ -21,9 +21,9 @@ function filterByTeam() {
         });
 
         if (hasMatchingRow) {
-            table.style.display = 'table'; // Show the table if it has matching rows
+            table.style.display = 'table';
         } else {
-            table.style.display = 'none'; // Hide the table if it has no matching rows
+            table.style.display = 'none';
         }
     });
 }
@@ -42,7 +42,3 @@ function filterByGroup() {
         }
     });
 }
-
-// Attach event listeners to the input and select elements
-document.getElementById('searchBox').addEventListener('input', filterByTeam);
-document.querySelector('.select_groups').addEventListener('change', filterByGroup);
